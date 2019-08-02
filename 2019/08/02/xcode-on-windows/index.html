@@ -475,6 +475,10 @@ Written by John你想要开发iOS app但是没有可以支持Apple操作系统�
           
 
   
+    <div id="gitalk-container">
+    </div>
+  
+
 
         </div>
         
@@ -803,6 +807,23 @@ Written by John你想要开发iOS app但是没有可以支持Apple操作系统�
 
 
 
+
+
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+   <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: 'acea8d30d6e41ae229be',
+          clientSecret: '15797f22b7567b47b51b85f0e94e0cf9759ce871',
+          repo: 'i491.github.io',
+          owner: 'i491',
+          admin: ['i491'],
+          id: md5(window.location.pathname),
+          distractionFreeMode: 'true'
+        })
+        gitalk.render('gitalk-container')
+       </script>
 
 
   
